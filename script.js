@@ -11,3 +11,11 @@ function generateGrid(size) {
 }
 
 generateGrid(16);
+const grid = document.querySelector('.grid-container')
+
+// using event delegation to handle all child nodes simultaneously
+grid.addEventListener('mouseover', (e) => {
+    if (e.target.matches('.grid-cell')) {
+        e.target.style.backgroundColor = 'black';
+    }
+})
