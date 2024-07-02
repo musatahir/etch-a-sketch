@@ -11,7 +11,28 @@
 
 <body>
 
-    <div class="grid-container"></div>
+    <header>
+        <h1>Etch A Sketch</h1>
+    </header>
+
+    <div class="description">
+        <p>Welcome to Etch A Sketch! Choose the dimensions of your grid below. To
+            reset the grid, reapply the dimensions.
+        </p>
+    </div>
+
+    <div class="container">
+
+        <div class="controls-container">
+            <h3>Controls</h3>
+            <div class="grid-size">16x16</div>
+            <input type="range" id="slider" min="2" max="30" value="16" />
+            <button class="apply">Apply</button>
+        </div>
+
+        <div class="grid-container"></div>
+    </div>
+    </div>
 
     <script src="script.js"> </script>
 
